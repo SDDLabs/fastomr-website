@@ -1,177 +1,156 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>FastOMR – Build. Scan. Score — Fast.</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      scroll-behavior: smooth;
+    <meta charset="UTF-8">
+    <title>FastOMR - Modern OMR Form Creation and Scanning</title>
+    <meta name="description" content="FastOMR revolutionizes OMR form creation and scanning with a dynamic form builder, accurate scanning engine, and total layout control for educators, researchers, and survey agencies.">
+    <meta name="keywords" content="OMR, Optical Mark Recognition, Form Builder, Exam Scanning, Survey Data Collection, Bubble Sheet Scanner, Test Grading, FastOMR">
+    <meta name="author" content="FastOMR">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="canonical" href="https://fastomr.com/">
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://fastomr.com/">
+    <meta property="og:title" content="FastOMR - Modern OMR Form Creation and Scanning">
+    <meta property="og:description" content="Revolutionize OMR form creation and scanning with unparalleled speed and efficiency.">
+    <meta property="og:image" content="https://fastomr.com/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://fastomr.com/">
+    <meta property="twitter:title" content="FastOMR - Modern OMR Form Creation and Scanning">
+    <meta property="twitter:description" content="Revolutionize OMR form creation and scanning with unparalleled speed and efficiency.">
+    <meta property="twitter:image" content="https://fastomr.com/twitter-image.jpg">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "FastOMR",
+      "url": "https://fastomr.com/",
+      "logo": "https://fastomr.com/assets/images/fastOMR-logo.png",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer support",
+        "url": "https://fastomr.com/#contact"
+      },
+      "sameAs": [
+        "https://twitter.com/fastomr",
+        "https://www.facebook.com/fastomr"
+      ]
     }
-    .hero {
-      background: linear-gradient(to right, #007bff, #00c6ff);
-      color: white;
-      padding: 100px 0;
-      text-align: center;
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "FastOMR",
+      "url": "https://fastomr.com/",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://fastomr.com/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
     }
-    .feature-icon {
-      font-size: 2rem;
-      color: #007bff;
-    }
-    .section-title {
-      font-weight: 700;
-      margin-bottom: 40px;
-      text-align: center;
-    }
-    .screenshot-caption {
-      font-size: 1.1rem;
-      font-weight: 500;
-      margin-top: 10px;
-      text-align: center;
-    }
-    footer {
-      background-color: #f8f9fa;
-      padding: 30px 0;
-    }
-    .cta {
-      background: #007bff;
-      color: white;
-      padding: 50px 0;
-      text-align: center;
-    }
-    .cta h2 {
-      margin-bottom: 20px;
-    }
-  </style>
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<!-- Hero -->
-<section class="hero">
-  <div class="container">
-    <h1 class="display-4">FastOMR</h1>
-    <p class="lead">Build. Scan. Score — Fast.</p>
-    <a href="#features" class="btn btn-light btn-lg mt-4">Explore Features</a>
-  </div>
-</section>
-
-<!-- App Description -->
-<section class="py-5">
-  <div class="container">
-    <p class="lead text-center">
-      FastOMR is your all-in-one solution for creating and scanning OMR (Optical Mark Recognition) forms — faster than ever. With a drag-and-drop interface, powerful recognition engine, and full customization features, FastOMR empowers educators, institutions, and researchers to build dynamic forms, print them, and instantly process them for accurate results.
-    </p>
-  </div>
-</section>
-
-<!-- Features -->
-<section id="features" class="py-5 bg-light">
-  <div class="container">
-    <h2 class="section-title">🔑 Key Features</h2>
-    <div class="row text-center">
-      <div class="col-md-4 mb-4">
-        <div class="feature-icon">🚀</div>
-        <h5 class="mt-3">Dynamic Form Builder</h5>
-        <p>Create forms with ID numbers, MCQs, phone fields, and more.</p>
-      </div>
-      <div class="col-md-4 mb-4">
-        <div class="feature-icon">🎯</div>
-        <h5 class="mt-3">Accurate Scanning Engine</h5>
-        <p>Use webcam, mobile, or scanner to get instant scoring.</p>
-      </div>
-      <div class="col-md-4 mb-4">
-        <div class="feature-icon">🎨</div>
-        <h5 class="mt-3">Total Layout Control</h5>
-        <p>Customize everything: spacing, fonts, borders, columns.</p>
-      </div>
-      <div class="col-md-4 mb-4">
-        <div class="feature-icon">📤</div>
-        <h5 class="mt-3">Export with Ease</h5>
-        <p>Download results in CSV, PDF or use our API.</p>
-      </div>
-      <div class="col-md-4 mb-4">
-        <div class="feature-icon">🔐</div>
-        <h5 class="mt-3">Secure User Management</h5>
-        <p>Access control for teams and institutions.</p>
-      </div>
-      <div class="col-md-4 mb-4">
-        <div class="feature-icon">🌐</div>
-        <h5 class="mt-3">Cloud-Based & Device-Ready</h5>
-        <p>Access your forms & results from anywhere.</p>
-      </div>
+    <header class="sticky">
+        <nav>
+            <div class="container">
+                <h1>FastOMR</h1>
+                <ul>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#ideal-for">Ideal For</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="hero">
+        <div class="container">
+            <h2>Design OMR Forms in Minutes</h2>
+            <p>FastOMR revolutionizes OMR form creation and scanning, offering unparalleled speed and efficiency.</p>
+            <a href="#" class="cta-button">Get Started</a>
+        </div>
     </div>
-  </div>
-</section>
 
-<!-- Screenshots -->
-<section class="py-5">
-  <div class="container">
-    <h2 class="section-title">🖼️ Screenshots</h2>
-    <div class="row text-center">
-      <div class="col-md-3 mb-4">
-        <img src="https://via.placeholder.com/200x150" class="img-fluid rounded shadow" />
-        <div class="screenshot-caption">Design OMR Forms in Minutes</div>
-      </div>
-      <div class="col-md-3 mb-4">
-        <img src="https://via.placeholder.com/200x150" class="img-fluid rounded shadow" />
-        <div class="screenshot-caption">Instant Scanning. Real-Time Results.</div>
-      </div>
-      <div class="col-md-3 mb-4">
-        <img src="https://via.placeholder.com/200x150" class="img-fluid rounded shadow" />
-        <div class="screenshot-caption">Fully Customizable Layouts</div>
-      </div>
-      <div class="col-md-3 mb-4">
-        <img src="https://via.placeholder.com/200x150" class="img-fluid rounded shadow" />
-        <div class="screenshot-caption">Ideal for Education, Surveys, and Research</div>
-      </div>
-    </div>
-  </div>
-</section>
+    <main>
+        <section id="features" class="container scroll-animate">
+            <h2>Key Features</h2>
+            <div class="feature-grid">
+                <div class="feature scroll-animate">
+                    <h3>🚀 Dynamic Form Builder</h3>
+                    <p>Easily customize sections like ID numbers, MCQs, and phone fields with a drag-and-drop interface.</p>
+                </div>
+                <div class="feature scroll-animate">
+                    <h3>🎯 Accurate Scanning Engine</h3>
+                    <p>Real-time results via webcam, mobile, or scanner with computer vision.</p>
+                </div>
+                <div class="feature scroll-animate">
+                    <h3>🎨 Total Layout Control</h3>
+                    <p>Adjust circle size, spacing, fonts, and more for tailored forms.</p>
+                </div>
+                <div class="feature scroll-animate">
+                    <h3>📤 Export with Ease</h3>
+                    <p>Download results in CSV, PDF, or integrate with your system through API.</p>
+                </div>
+                <div class="feature scroll-animate">
+                    <h3>🔐 Secure User Management</h3>
+                    <p>Ideal for schools, testing centers, and survey teams with access control.</p>
+                </div>
+                <div class="feature scroll-animate">
+                    <h3>🌐 Cloud-Based & Device-Ready</h3>
+                    <p>Securely access templates and results from any device.</p>
+                </div>
+            </div>
+        </section>
 
-<!-- Use Cases -->
-<section class="py-5 bg-light">
-  <div class="container">
-    <h2 class="section-title">🌍 Ideal For</h2>
-    <div class="row text-center">
-      <div class="col-md-3">
-        <h5>🏫 Schools & Colleges</h5>
-        <p>Create and evaluate tests in minutes.</p>
-      </div>
-      <div class="col-md-3">
-        <h5>🧪 Researchers</h5>
-        <p>Collect and analyze bubble-sheet data with precision.</p>
-      </div>
-      <div class="col-md-3">
-        <h5>🧾 Survey Agencies</h5>
-        <p>Build complex surveys with zero manual entry.</p>
-      </div>
-      <div class="col-md-3">
-        <h5>🧠 Training Institutes</h5>
-        <p>Simplify exam management and scoring.</p>
-      </div>
-    </div>
-  </div>
-</section>
+        <section id="ideal-for" class="container scroll-animate">
+            <h2>Ideal For</h2>
+            <div class="use-case-grid">
+                <div class="use-case scroll-animate">
+                    <h3>🏫 Schools & Colleges</h3>
+                    <p>Effortlessly create and assess tests.</p>
+                </div>
+                <div class="use-case scroll-animate">
+                    <h3>🧪 Researchers</h3>
+                    <p>Precisely collect and analyze bubble-sheet data.</p>
+                </div>
+                <div class="use-case scroll-animate">
+                    <h3>🧾 Survey Agencies</h3>
+                    <p>Construct intricate surveys without manual entry.</p>
+                </div>
+                <div class="use-case scroll-animate">
+                    <h3>🧠 Training Institutes</h3>
+                    <p>Streamline exam management and scoring processes.</p>
+                </div>
+            </div>
+        </section>
 
-<!-- Call to Action -->
-<section class="cta">
-  <div class="container">
-    <h2>Start Scanning Smarter with FastOMR</h2>
-    <p class="lead">No hardware. No coding. Just fast and accurate results.</p>
-    <a href="#" class="btn btn-light btn-lg">Get Started Now</a>
-  </div>
-</section>
+        <section class="quotes">
+            <div class="container">
+                <blockquote>"Instant Scanning. Real-Time Results."</blockquote>
+                <blockquote>"Fully Customizable Layouts"</blockquote>
+                <blockquote>"Ideal for Education, Surveys, and Research"</blockquote>
+            </div>
+        </section>
+    </main>
 
-<!-- Footer -->
-<footer>
-  <div class="container text-center">
-    <p>&copy; 2025 FastOMR. All rights reserved.</p>
-    <p><a href="https://fastomr.com">fastomr.com</a> | “Smart Optical Forms. Delivered Fast.”</p>
-  </div>
-</footer>
+    <footer id="contact">
+        <div class="container">
+            <p>&copy; 2025 FastOMR. All rights reserved.</p>
+        </div>
+    </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

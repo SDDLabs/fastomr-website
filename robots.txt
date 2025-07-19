@@ -1,0 +1,7 @@
+# Allow all user agents to crawl the entire site
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://fastomr.com/sitemap.xml
+
